@@ -1,0 +1,45 @@
+hr{
+    color: white;
+}
+div{
+
+}
+#texto{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+section{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+#imagenCV{
+    justify-content:center;
+}
+
+#divPresentacion{
+    background-color: aquamarine;
+}
+
+.left-zone{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: violet;
+    align-items: center;
+    height: auto;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: brown;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
