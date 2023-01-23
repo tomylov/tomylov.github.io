@@ -6,55 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum vitae</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3137/3137864.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- link de fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <script src="js/funciones.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-
     <section>
+        <!-- Parte de la izquierda -->
         <div class="left-zone">
-
             <div>
-                <img id="imagenCV" src="https://randomuser.me/api/portraits/men/36.jpg" alt="imagen del cv">
+                <img class="imagenCV" src="https://realestatemarket.com.mx/images/influencers/influencers22-mark-zuckerberg.jpg" alt="imagen del cv">
             </div>
 
+            <div id="div-name">
+                <h1 id="name">Patrick</h1>
+                <h1 id="surname">Chapman</h1>
+                <h3>Desocupado / en busqueda</h3>
+            </div>
+
+            <hr>
             <div class="contact-container">
                 <h2>contacto: </h2>
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Imagen email" height="50px"
-                    width="50px">
-                <p id="texto">patrick.chapman@example.com</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3178/3178284.png" alt="Imagen email" height="20px"
+                    width="20px">
+                <span id="texto">patrick.chapman@example.com</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/7852/7852734.png" alt="Imagen email" height="20px"
+                    width="20px">
 
-                <p>(3413) 668-3908</p>
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Imagen email" height="50px"
-                    width="50px">
-                <p>Santa fe Argentina</p>
+                <span>(3413) 668-3908</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/967/967811.png" alt="Imagen email" height="20px"
+                    width="20px">
+                <span>Santa fe Argentina</span>
 
+            </div>
+
+            <div>
+                <h2>Fortalezas:</h2>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Ganas de aprender</li>
+                    <li>Autodidacta</li>
+                    <li>Creatividad</li>
+                </ul>
             </div>
 
 
 
         </div>
         <!-- parte de la derecha -->
-        <div>
-            <h1>Patrick chapman</h1>
-            <fieldset>
-                <legend>Acerca de mi:</legend>
-            </fieldset>
+        <div class="right-zone">
+            <div>
+                <h2>acerca de mi:</h2>
+                <p>hola mi nombre es y soy desarrollador front-end, me describiría como alguien a quien le encanta
+                    resolver problemas creando soluciones. Soy muy detallista y metódico, y siempre estoy buscando
+                    formas de mejorar la eficiencia de un proceso. También trabajador en equipo a la hora de resolver
+                    problemas y estoy ansioso por aprender nuevas tecnologías y técnicas. Me apasiona la codificación y
+                    siempre estoy buscando nuevos desafios.</p>
+            </div>
 
-            <fieldset>
-                <legend>Idiomas:</legend>
-            </fieldset>
 
-            <fieldset>
-                <legend>educacion:</legend>
-            </fieldset>
+            <div>
+                <h2>Experiencia profesional:</h2>
+                <div>2020 - actual<span> Desarrollador</span></div>
+                <p>Neoris</p>
+                <p> Trabaje como desarrolador cumpliendo las siguientes tareas:</p>
+                <ul>
+                    <li>Escribir código de programación para aplicaciones, herramientas y software.</li>
+                    <li>Investigar nuevas tecnologías y herramientas de programación para mejorar los productos.</li>
+                    <li>Solucionar problemas de programación y errores en el código.</li>
+                    <li>Desarrollar guías de usuario para orientar a los usuarios finales.</li>
+                    <li>Diseñar bibliotecas de programación y aplicaciones.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Estudios:</h2>
+                <p>Educacion secundaria:</p>
+                <div>bachiller en economía y administración <span>2014 - 2019</span></div>
+                <div>Colegio La Salle<span> Rosario,Santa Fe </span></div>
+
+                <p>Educacion susperior:</p>
+                <div>Ingenieria en Sistemas de Información <span>2020 - actual</span></div>
+                <div>Universidad Tecnologica Nacional <span>Rosario,Santa Fe </span></div>
+
+                <h2>Cursos:</h2>
+                <ul>
+                    <li>2021</ñ> Argentina Programa: #SéProgramar
+                </ul>
+
+            </div>
         </div>
 
     </section>
