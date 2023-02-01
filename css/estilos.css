@@ -41,7 +41,7 @@ section {
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -74,16 +74,37 @@ section {
 }
 
 #div-name h3{
-    font-size: 0.8em;
+    font-size:16px;
     font-weight: 300;
+}
+
+.date{
+    margin-top: 15px;
+}
+
+.date li{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.date img{
+    display: inline-block;
+    height:20px;
+    width:20px;
+}
+
+.date span{
+    font-weight: 300;
+    margin-left: 10px;
 }
 
 .contact-container li{
     position: relative;
     display: flex;
     list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
+    margin: 10px 0;    
 }
 
 .contact-container img{
@@ -95,6 +116,14 @@ section {
 .contact-container span{
     font-weight: 300;
     margin-left: 10px;
+}
+
+.contact-container a{
+    font-weight: 300;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .study li{
@@ -233,12 +262,16 @@ section {
 .div-more{
     margin-top: 20px;
     color:#4D6AFF;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #curse-add{
     list-style: none;
+    margin-left: 20px;
 }
 
 .div-curse{
     margin-top: 20px;
 }
+

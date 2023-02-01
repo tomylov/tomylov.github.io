@@ -31,15 +31,15 @@ window.onload = function () {
 
 document.getElementById('more').addEventListener('click', function () {
   let conditional = document.getElementById('more').innerText;
-  console.log(conditional);
+  let text = '2021-  Argentina Programa: #SéProgramar'
   if (conditional === '[Leer mas...]') {
       document.getElementById('tittle-curse').innerHTML = 'Cursos:';
-      document.getElementById('curse-add').innerHTML = '2021-  Argentina Programa: #SéProgramar';
+      document.getElementById('curse').innerHTML = text;
       document.getElementById('more').innerHTML = '[Leer menos...]';
       document.getElementById('curse-add').style.listStyle ='circle'; 
   }else{
       document.getElementById('tittle-curse').innerHTML = '';
-      document.getElementById('curse-add').innerHTML = '';
+      document.getElementById('curse').innerHTML = '';
       document.getElementById('more').innerHTML = '[Leer mas...]';
       document.getElementById('curse-add').style.listStyle ='none';
   }
