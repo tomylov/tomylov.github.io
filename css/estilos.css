@@ -1,35 +1,45 @@
-*{
+/* configuracion general */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato';
 }
 
-body{
+body {
     display: flex;
-    background: lightblue;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     min-height: 100vh;
+    background: linear-gradient(to bottom, #80FFDB, #5390D9);
 }
 
-section {
+.container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-width: 1000px;
+    min-width: 100px;
     margin: 50px;
     background: white;
-    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);    
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
 }
 
+/* parte de la izquierda del cv */
+
 .left-zone {
-    color:#fff;
+    color: #fff;
     position: relative;
     padding: 40px;
-    background: rgb(53, 60, 68);
+    background: #283d5c;
+}
+
+.div-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagenCV {
@@ -41,7 +51,7 @@ section {
     background-position: 50%;
     border-radius: 50%;
     background-size: 100% auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -66,59 +76,60 @@ section {
     line-height: 1.4em;
 }
 
-.tittles{
+.tittles {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 5px;
-}
-
-#div-name h3{
-    font-size:16px;
-    font-weight: 300;
-}
-
-.date{
     margin-top: 15px;
 }
 
-.date li{
+#div-name h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.date {
+    margin-top: 15px;
+}
+
+.date li {
     position: relative;
     display: flex;
     list-style: none;
     margin: 10px 0;
 }
 
-.date img{
+.date img {
     display: inline-block;
-    height:20px;
-    width:20px;
+    height: 20px;
+    width: 20px;
 }
 
-.date span{
+.date span {
     font-weight: 300;
     margin-left: 10px;
 }
 
-.contact-container li{
+.contact-container li {
     position: relative;
     display: flex;
     list-style: none;
-    margin: 10px 0;    
+    margin: 10px 0;
 }
 
-.contact-container img{
+.contact-container img {
     display: inline-block;
-    height:20px;
-    width:20px;
+    height: 20px;
+    width: 20px;
 }
 
-.contact-container span{
+.contact-container span {
     font-weight: 300;
     margin-left: 10px;
 }
 
-.contact-container a{
+.contact-container a {
     font-weight: 300;
     margin-left: 10px;
     color: white;
@@ -126,26 +137,27 @@ section {
     cursor: pointer;
 }
 
-.study li{
+.study li {
     list-style: none;
     margin-bottom: 15px;
 }
 
-.study h5{
+.study h5 {
     color: cyan;
     font-weight: 500;
 }
 
-.study h4{
-    font-weight: 500;
-    font-weight: bold;
+.study h4 {
+    font-weight: bolder;
+    font-size: 17px;
+    letter-spacing: 0.15px;
 }
 
-.study p{
+.study p {
     font-weight: 300;
 }
 
-.porcentaje{
+.porcentaje {
     position: relative;
     width: 100%;
     height: 6px;
@@ -153,20 +165,22 @@ section {
     background: black;
 }
 
-.languages li{
+.languages li {
     height: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.porcentaje div{
-    position:absolute;
+.porcentaje div {
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #1ec6ff;
 }
+
+/* parte de la derecha */
 
 .right-zone {
     position: relative;
@@ -174,18 +188,18 @@ section {
     background: #fff;
 }
 
-.me{
-    margin-bottom: 50px;     
+.me {
+    margin-bottom: 50px;
 }
 
-.tittles2{
+.tittles2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgb(53, 60, 68);
     margin-bottom: 20px;
 }
 
-.exp{
+.exp {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,17 +208,17 @@ section {
     margin-left: 0;
 }
 
-.company{
-    min-width: 150px;    
+.company {
+    min-width: 150px;
 }
 
-.company h5{
+.company h5 {
     text-transform: uppercase;
     color: grey;
     font-weight: 600;
 }
 
-.work h4{
+.work h4 {
     display: flex;
     text-transform: uppercase;
     color: #3D3DFF;
@@ -212,14 +226,14 @@ section {
     justify-content: center;
 }
 
-.skills  h4{
+.skills h4 {
     text-transform: uppercase;
     font-weight: 500;
-    color: black;    
+    color: black;
     width: 25%;
 }
 
-.skills .box{
+.skills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -229,14 +243,14 @@ section {
     margin-bottom: 30px;
 }
 
-.skills h4 .porcentaje{
+.skills h4 .porcentaje {
     position: relative;
     width: 100%;
     height: 10px;
     background: #E6ECFF;
 }
 
-.skills .box .porcentaje div{
+.skills .box .porcentaje div {
     position: absolute;
     top: 0;
     left: 0;
@@ -244,34 +258,65 @@ section {
     background: #4D6AFF;
 }
 
-.interest{
+.interest {
     margin-top: 50px;
 }
 
-.interest li{
-    list-style:none;
+.interest ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interest li {
+    list-style: none;
     font-weight: 500;
     color: black;
     margin-top: 10px;
 }
 
-#more{
+#more {
     cursor: pointer;
 }
 
-.div-more{
+.div-more {
     margin-top: 20px;
-    color:#4D6AFF;
+    color: #4D6AFF;
     display: flex;
     justify-content: flex-end;
 }
 
-#curse-add{
+#course-add {
     list-style: none;
     margin-left: 20px;
 }
 
-.div-curse{
-    margin-top: 20px;
+.div-course {
+    margin-top: 40px;
 }
 
+@media (max-width: 1000px) {
+    .container {
+        margin: 5px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .exp {
+        flex-direction: column;
+        margin-bottom: 2px;
+        align-items: flex-start;
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box .porcentaje {
+        margin-top: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

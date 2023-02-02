@@ -1,7 +1,4 @@
-/* https://cvcrea.es/wp-content/uploads/2022/07/ejemplo-curriculum-vitae-online-gratis.jpg */
-/* https://fontawesome.com/v4/icons/ */
-
-
+/* funcion para calcular la edad que aparece en el cv */
 window.onload = function () {
   var fecha = document.getElementById("naci").innerText;
   console.log(fecha);
@@ -28,19 +25,20 @@ window.onload = function () {
   document.getElementById('edad').innerHTML = edad + " años";
 };
 
+/* funcion que muestra los curso clickeando el span */
 
 document.getElementById('more').addEventListener('click', function () {
   let conditional = document.getElementById('more').innerText;
   let text = '2021-  Argentina Programa: #SéProgramar'
-  if (conditional === '[Leer mas...]') {
-      document.getElementById('tittle-curse').innerHTML = 'Cursos:';
-      document.getElementById('curse').innerHTML = text;
-      document.getElementById('more').innerHTML = '[Leer menos...]';
-      document.getElementById('curse-add').style.listStyle ='circle'; 
+  if (conditional === '[ver mas...]') {
+      document.getElementById('tittle-course').innerHTML = 'Cursos:';
+      document.getElementById('course').innerHTML = text;
+      document.getElementById('more').innerHTML = '[ver menos...]';
+      document.getElementById('course-add').style.listStyle ='circle'; 
   }else{
-      document.getElementById('tittle-curse').innerHTML = '';
-      document.getElementById('curse').innerHTML = '';
-      document.getElementById('more').innerHTML = '[Leer mas...]';
-      document.getElementById('curse-add').style.listStyle ='none';
+      document.getElementById('tittle-course').innerHTML = '';
+      document.getElementById('course').innerHTML = '';
+      document.getElementById('more').innerHTML = '[ver mas...]';
+      document.getElementById('course-add').style.listStyle ='none';
   }
 })
